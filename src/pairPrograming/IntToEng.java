@@ -17,8 +17,8 @@ public class IntToEng {
     // 数値を英訳する変換するメソッド
 
     static String translateEng(int n) {
-
-        return "";
+    	String[] a={"zero","one","two","three","four","five","six","seven","eight","nine"};
+        return a[n];
 
     }
 
