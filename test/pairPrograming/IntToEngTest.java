@@ -84,4 +84,40 @@ public class IntToEngTest {
 		String actual = ite.translateEng(1000);
 		assertThat(actual,is(expected));		
 	}
+	
+	@Test
+	public void translateEngで1234をone_thousand_two_hundred_thirty_fourと英訳する() {
+		//fail("Not yet implemented");
+		IntToEng ite = new IntToEng();
+		String expected = "one thousand two hundred thirty four";
+		String actual = ite.translateEng(1234);
+		assertThat(actual,is(expected));		
+	}
+	
+	@Test
+	public void translateEngで10000をten_thousand英訳する() {
+		//fail("Not yet implemented");
+		IntToEng ite = new IntToEng();
+		String expected = "ten thousand";
+		String actual = ite.translateEng(10000);
+		assertThat(actual,is(expected));		
+	}
+	
+	@Test
+	public void translateEngで19999をnineteen_thousand_nine_hundred_ninty_nine英訳する() {
+		//fail("Not yet implemented");
+		IntToEng ite = new IntToEng();
+		String expected = "nineteen thousand nine hundred ninety nine";
+		String actual = ite.translateEng(19999);
+		assertThat(actual,is(expected));		
+	}
+	
+	@Test
+	public void translateEngで20000をtwenty_thousandと英訳する() {
+		//fail("Not yet implemented");
+		IntToEng ite = new IntToEng();
+		String expected = "twenty thousand";
+		String actual = ite.translateEng(20000);
+		assertThat(actual,is(expected));		
+	}
 }

@@ -23,8 +23,21 @@
 	    	String s = null;
 	    	int m = n%100;
 	    	int r= n%1000;
+	    	
+	    	
+	    	
 	    	if(n>=1000) {
-	    		s = a[n/1000] + " thousand";
+	    		int  t = n/1000;
+	    		if(0<t && t<20){
+	    			s = a[n/1000] + " thousand";
+	    		}
+	    		if(t>=20 && t<100){
+	    			s = b[t/10];
+	    			if(t%10 != 0){
+	    				s= " "+ a[t%10];
+	    			}
+	    			 s = s + " thousand";
+	    		}
 	    		if(r!=0&&r>100&&r<=999){
 	    			if(r>=100) {
 	    	    		s = s +" "+ a[r/100] + " hundred";
