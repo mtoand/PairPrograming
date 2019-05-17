@@ -20,6 +20,7 @@ public class IntToEng {
     	String[] a={"","one","two","three","four","five","six","seven","eight","nine",
     			"ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"};
     	String[] b={"","","twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninety"};
+    	if(n>=100) return "over hundred";
     	if(n<20){
     		if(n==0) {return "zero";}
     		return a[n];
